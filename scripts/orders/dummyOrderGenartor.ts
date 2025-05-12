@@ -9,7 +9,7 @@ function randomAmountIn(): string {
 }
 
 
-export default function generateRandomOrder(numberOfOrder: number) {
+export default function generateRandomOrder(numberOfOrder: number): Order[] {
     const tokens: TokenInformation[] = TokenMeatadata.map(token => {
         const key = Object.keys(token)[0];
         const data = (token as any)[key];
@@ -21,7 +21,6 @@ export default function generateRandomOrder(numberOfOrder: number) {
     })
     const orders: Order[] = []
     for (let i = 0; i < numberOfOrder; i++) {
-        // pick two distinct tokens
         let inIdx = randomIndex(tokens.length);
         let outIdx = randomIndex(tokens.length - 1);
         if (outIdx >= inIdx) outIdx++;
@@ -40,7 +39,7 @@ export default function generateRandomOrder(numberOfOrder: number) {
             poolFee: '3000'
         });
     }
-    return JSON.stringify(orders)
+    return orders
 
 }
 
