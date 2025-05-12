@@ -1,0 +1,23 @@
+[
+  {
+    "token1": {
+      "Address": "0x3d83AD8F864B8Cc50723A2d10d3a013b164E2d14",
+      "Symbol": "MKR",
+      "Decimal": "18"
+    }
+  },
+  {
+    "token2": {
+      "Address": "0x47ae609E1b4609c3386A109F0380E0CC15C7A691",
+      "Symbol": "AHM",
+      "Decimal": "18"
+    }
+  },
+  {
+    "token3": {
+      "Address": "0x7A4bD1409cd9D3d952e018C9934E821bC6dF5a58",
+      "Symbol": "AAV",
+      "Decimal": "18"
+    }
+  }
+]
